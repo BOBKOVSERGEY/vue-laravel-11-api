@@ -1,5 +1,6 @@
 <script setup lang="ts">
-const greeting = defineModel<string>('greeting')
+const greeting = defineModel<string>('greeting');
+const farewell = defineModel<string>('farewell');
 
 
 
@@ -9,5 +10,10 @@ const greeting = defineModel<string>('greeting')
   <input
       type="text"
       v-model="greeting"
+  >
+  <br>
+  <input
+      type="text"
+      v-model="farewell"
   >
 </template>
