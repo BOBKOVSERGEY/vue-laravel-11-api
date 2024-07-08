@@ -9,6 +9,11 @@ const router = createRouter({
       name: 'home',
       component: () => import('@/pages/HomePage.vue')
     },
+    {
+      path: '/define-model',
+      name: 'defineModel',
+      component: () => import('@/pages/DefineModelPage.vue')
+    },
   ]
 })
 
