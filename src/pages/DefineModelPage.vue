@@ -7,6 +7,6 @@ const message = ref<string>('');
 </script>
 
 <template>
-  <DefineModel v-model:greeting="message" />
+  <DefineModel v-model="message" />
   {{ message }}
 </template>
