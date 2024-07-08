@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const modelValue = defineModel()
+const greeting = defineModel<string>('greeting')
 
 
 
@@ -8,6 +8,6 @@ const modelValue = defineModel()
 <template>
   <input
       type="text"
-      v-model="modelValue"
+      v-model="greeting"
   >
 </template>
