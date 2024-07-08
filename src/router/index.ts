@@ -19,6 +19,11 @@ const router = createRouter({
       name: 'defineSlots',
       component: () => import('@/pages/DefineSlotsPage.vue')
     },
+    {
+      path: '/to-ref-to-value',
+      name: 'toRefToValue',
+      component: () => import('@/pages/ToRefToValuePage.vue')
+    },
   ]
 })
 
