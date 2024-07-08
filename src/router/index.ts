@@ -14,6 +14,11 @@ const router = createRouter({
       name: 'defineModel',
       component: () => import('@/pages/DefineModelPage.vue')
     },
+    {
+      path: '/define-slots',
+      name: 'defineSlots',
+      component: () => import('@/pages/DefineSlotsPage.vue')
+    },
   ]
 })
 

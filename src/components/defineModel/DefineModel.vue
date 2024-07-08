@@ -13,7 +13,7 @@ const farewell = defineModel<string>('farewell');
   >
   <br>
   <input
-      type="text"
+      type="text"гтх
       v-model="farewell"
   >
 </template>
