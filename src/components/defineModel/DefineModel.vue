@@ -1,14 +1,14 @@
 <script setup lang="ts">
  const props = defineProps<{
-   modelValue: string
+   greeting: string
  }>();
 
  const emit = defineEmits<{
-   (e: 'update:modelValue', message: string | null): void
+   (e: 'update:greeting', message: string | null): void
  }>();
 
  const onInput = (e: Event) => {
-    emit('update:modelValue', (e.target as HTMLInputElement).value)
+    emit('update:greeting', (e.target as HTMLInputElement).value)
  }
 
 </script>
@@ -16,6 +16,6 @@
 <template>
   <input
       type="text"
-      :value="modelValue"
+      :value="greeting"
       @input="onInput">
 </template>
