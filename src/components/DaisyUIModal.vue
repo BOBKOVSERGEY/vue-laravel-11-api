@@ -1,5 +1,9 @@
 <script setup lang="ts">
-
+const slots = defineSlots<{
+  default?: (props: {}) => any
+  title?: (props: { msg?: string }) => any
+  body: (props: { short: boolean }) => any
+}>()
 </script>
 
 <template>
@@ -7,13 +11,17 @@
     <div class="modal-box">
       <h3 class="text-lg font-bold">
         <slot name="title"/>
+
       </h3>
+      <div v-if="!slots.title">Some new</div>
+      <slot/>
       <p class="py-4">
         <slot
             name="body"
             :short="true"
         />
       </p>
+
       <div class="modal-action">
         <form method="dialog">
           <!-- if there is a button in form, it will close the modal -->
